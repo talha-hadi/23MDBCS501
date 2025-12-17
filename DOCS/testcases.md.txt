@@ -1,0 +1,63 @@
+Test Cases for Login Functionality
+
+Test Case ID: TC-01
+Test Case Description: Verify login with valid credentials
+Pre-Conditions: User account exists
+Input: username + password
+Steps:
+  1. Go to login page
+  2. Enter valid data
+  3. Click Login
+Expected Result: User should be logged in successfully
+
+Test Case ID: TC-02
+Test Case Description: Verify login with empty username
+Pre-Conditions: Login page open
+Input: "" + valid password
+Steps:
+  1. Go to login page
+  2. Leave username empty
+  3. Enter password
+  4. Click Login
+Expected Result: Error message should appear for empty username
+
+Test Case ID: TC-03
+Test Case Description: Verify login with empty password
+Pre-Conditions: Login page open
+Input: valid username + ""
+Steps:
+  1. Go to login page
+  2. Enter username
+  3. Leave password empty
+  4. Click Login
+Expected Result: Error message should appear for empty password
+
+Test Case ID: TC-04
+Test Case Description: Verify login with correct credentials (case sensitive)
+Pre-Conditions: User account exists
+Input: correct username + correct password (check case sensitivity)
+Steps:
+  1. Go to login page
+  2. Enter username and password with correct case
+  3. Click Login
+Expected Result: User should be logged in successfully
+
+Test Case ID: TC-05
+Test Case Description: Verify login with invalid password
+Pre-Conditions: User account exists
+Input: valid username + wrong password
+Steps:
+  1. Go to login page
+  2. Enter username and wrong password
+  3. Click Login
+Expected Result: Error message should appear for invalid credentials
+
+Test Case ID: TC-06
+Test Case Description: Verify login with invalid username
+Pre-Conditions: Login page open
+Input: invalid username + valid password
+Steps:
+  1. Go to login page
+  2. Enter invalid username and valid password
+  3. Click Login
+Expected Result: Error message should appear for invalid credentials
